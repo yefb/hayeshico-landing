@@ -1,44 +1,60 @@
 # Hayeshi Instructors
 # Edit this file to update instructor information
 
-- id: instructor-taekwondo
-  name: "Nombre del Profesor"  # FILL IN
+# Taekwondo Instructors
+- id: instructor-yeiner
+  name: "Yeiner Fernández"
   discipline: "Taekwondo"
-  photo: "/assets/images/instructors/taekwondo.jpg"  # FILL IN: Add photo
-  credentials: "Cinturón Negro"  # FILL IN
-  bio: "Breve biografía del instructor de Taekwondo."  # FILL IN
+  photo: "/assets/images/instructors/yeiner.jpg"
+  credentials: "Cinturón Negro 2do Dan"
+  bio: "Enfoque en técnica, precisión, vocabulario tradicional y poomsae. Dedicado a la ejecución perfecta de cada movimiento."
 
+- id: instructor-shirley
+  name: "Shirley Villa"
+  discipline: "Taekwondo"
+  photo: "/assets/images/instructors/shirley.jpg"
+  credentials: "Cinturón Negro 1er Dan"
+  bio: "Clases dinámicas para niños y preadolescentes. Enfoque en vocabulario, técnica y precisión con metodología activa y divertida."
+
+- id: instructor-ferney
+  name: "Ferney Moncada"
+  discipline: "Taekwondo"
+  photo: "/assets/images/instructors/ferney.jpg"
+  credentials: "Cinturón Negro 2do Dan"
+  bio: "Especialista en combate y preparación para competencias. Formador de atletas competitivos."
+
+# Other Disciplines - FILL IN
 - id: instructor-judo
-  name: "Nombre del Profesor"  # FILL IN
+  name: "Nombre del Profesor"
   discipline: "Judo"
-  photo: "/assets/images/instructors/judo.jpg"  # FILL IN: Add photo
-  credentials: "Cinturón Negro"  # FILL IN
-  bio: "Breve biografía del instructor de Judo."  # FILL IN
+  photo: "/assets/images/instructors/judo.jpg"
+  credentials: "Cinturón Negro"
+  bio: "Breve biografía del instructor de Judo."
 
 - id: instructor-jiujitsu
-  name: "Nombre del Profesor"  # FILL IN
+  name: "Nombre del Profesor"
   discipline: "Jiujitsu"
-  photo: "/assets/images/instructors/jiujitsu.jpg"  # FILL IN: Add photo
-  credentials: "Cinturón Negro"  # FILL IN
-  bio: "Breve biografía del instructor de Jiujitsu."  # FILL IN
+  photo: "/assets/images/instructors/jiujitsu.jpg"
+  credentials: "Cinturón Negro"
+  bio: "Breve biografía del instructor de Jiujitsu."
 
 - id: instructor-boxeo
-  name: "Nombre del Profesor"  # FILL IN
+  name: "Nombre del Profesor"
   discipline: "Boxeo"
-  photo: "/assets/images/instructors/boxeo.jpg"  # FILL IN: Add photo
-  credentials: "Entrenador Profesional"  # FILL IN
-  bio: "Breve biografía del instructor de Boxeo."  # FILL IN
+  photo: "/assets/images/instructors/boxeo.jpg"
+  credentials: "Entrenador Profesional"
+  bio: "Breve biografía del instructor de Boxeo."
 
 - id: instructor-krav-maga
-  name: "Nombre del Profesor"  # FILL IN
+  name: "Nombre del Profesor"
   discipline: "Krav Maga"
-  photo: "/assets/images/instructors/krav-maga.jpg"  # FILL IN: Add photo
-  credentials: "Instructor Certificado"  # FILL IN
-  bio: "Breve biografía del instructor de Krav Maga."  # FILL IN
+  photo: "/assets/images/instructors/krav-maga.jpg"
+  credentials: "Instructor Certificado"
+  bio: "Breve biografía del instructor de Krav Maga."
 
 - id: instructor-capoeira
-  name: "Nombre del Profesor"  # FILL IN
+  name: "Nombre del Profesor"
   discipline: "Capoeira"
-  photo: "/assets/images/instructors/capoeira.jpg"  # FILL IN: Add photo
-  credentials: "Mestre / Contramestre"  # FILL IN
-  bio: "Breve biografía del instructor de Capoeira."  # FILL IN
+  photo: "/assets/images/instructors/capoeira.jpg"
+  credentials: "Mestre / Contramestre"
+  bio: "Breve biografía del instructor de Capoeira."
