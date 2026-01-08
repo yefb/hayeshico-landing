@@ -432,6 +432,14 @@ p {
       max-height: 500px;
     }
   }
+
+  &.dimmed {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 
 // Pricing Section - Hour-based memberships

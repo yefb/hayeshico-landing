@@ -126,23 +126,29 @@ function initAgePathways() {
   pathwayCards.forEach(card => {
     card.addEventListener('click', function() {
       const age = this.dataset.age;
+      const isActive = this.classList.contains('active');
 
-      // Toggle active state
+      // Toggle active state - clicking same card deselects
       pathwayCards.forEach(c => c.classList.remove('active'));
-      this.classList.add('active');
 
-      // Filter discipline cards (show/dim based on age)
-      disciplineCards.forEach(disciplineCard => {
-        const ages = disciplineCard.dataset.ages?.split(',') || [];
+      if (isActive) {
+        // Deselect - reset all cards
+        disciplineCards.forEach(disciplineCard => {
+          disciplineCard.classList.remove('dimmed');
+        });
+      } else {
+        this.classList.add('active');
 
-        if (ages.includes(age)) {
-          disciplineCard.style.opacity = '1';
-          disciplineCard.style.order = '0';
-        } else {
-          disciplineCard.style.opacity = '0.4';
-          disciplineCard.style.order = '1';
-        }
-      });
+        // Highlight matching disciplines, subtle dim for others
+        disciplineCards.forEach(disciplineCard => {
+          const ages = disciplineCard.dataset.ages?.split(',') || [];
+          if (ages.includes(age)) {
+            disciplineCard.classList.remove('dimmed');
+          } else {
+            disciplineCard.classList.add('dimmed');
+          }
+        });
+      }
 
       // Scroll to disciplines section
       const disciplinesSection = document.getElementById('disciplinas');
