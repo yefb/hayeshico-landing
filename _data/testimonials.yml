@@ -1,0 +1,20 @@
+# Student testimonials
+# Edit this file to add real testimonials
+
+- id: testimonial-1
+  quote: "Mi hijo ha desarrollado una confianza increíble desde que empezó en Hayeshi. Los profesores son excelentes y el ambiente es muy familiar."  # FILL IN with real testimonial
+  author: "Nombre del Padre/Madre"  # FILL IN
+  context: "Padre de estudiante de Judo"  # FILL IN
+  photo: ""  # Optional: path to photo
+
+- id: testimonial-2
+  quote: "Después de años buscando un lugar donde entrenar, encontré en Hayeshi exactamente lo que necesitaba. La calidad de instrucción es excepcional."  # FILL IN with real testimonial
+  author: "Nombre del Estudiante"  # FILL IN
+  context: "Estudiante de Krav Maga, 2 años"  # FILL IN
+  photo: ""  # Optional: path to photo
+
+- id: testimonial-3
+  quote: "La Capoeira en Hayeshi me ha cambiado la vida. No solo es ejercicio, es arte, música y comunidad. Lo recomiendo totalmente."  # FILL IN with real testimonial
+  author: "Nombre del Estudiante"  # FILL IN
+  context: "Estudiante de Capoeira, 1 año"  # FILL IN
+  photo: ""  # Optional: path to photo

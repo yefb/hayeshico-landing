@@ -1,0 +1,31 @@
+<section class="section age-pathways" id="edades">
+  <div class="container">
+    <div class="section-header">
+      <h2>Programas Para Todas las Edades</h2>
+      <p>Selecciona tu grupo de edad para ver las disciplinas disponibles y horarios adaptados a ti.</p>
+    </div>
+
+    <div class="pathways-grid">
+      <div class="card pathway-card" data-age="kids">
+        <div class="pathway-icon">👦</div>
+        <h3 class="pathway-title">Niños</h3>
+        <p class="pathway-ages">6 a 12 años</p>
+        <p class="pathway-trial">Clase de prueba: {{ site.trial_duration_kids }}</p>
+      </div>
+
+      <div class="card pathway-card" data-age="teens">
+        <div class="pathway-icon">🧑</div>
+        <h3 class="pathway-title">Adolescentes</h3>
+        <p class="pathway-ages">13 a 17 años</p>
+        <p class="pathway-trial">Clase de prueba: {{ site.trial_duration_teens_adults }}</p>
+      </div>
+
+      <div class="card pathway-card" data-age="adults">
+        <div class="pathway-icon">👨</div>
+        <h3 class="pathway-title">Adultos</h3>
+        <p class="pathway-ages">18 años en adelante</p>
+        <p class="pathway-trial">Clase de prueba: {{ site.trial_duration_teens_adults }}</p>
+      </div>
+    </div>
+  </div>
+</section>

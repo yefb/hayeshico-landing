@@ -1,0 +1,41 @@
+<section class="section" id="precios" style="background-color: var(--color-bg-elevated);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Planes y Precios</h2>
+      <p>Membresías flexibles sin contratos de permanencia. Tu primera clase es gratis.</p>
+    </div>
+
+    <div class="grid grid-3">
+      {% for tier in site.data.pricing.tiers %}
+      <div class="card pricing-card {% if tier.highlighted %}highlighted{% endif %}">
+        <h3 class="pricing-name">{{ tier.name }}</h3>
+        <p class="pricing-description">{{ tier.description }}</p>
+
+        <div class="pricing-price">
+          <span class="currency">{{ site.data.pricing.currency }}</span>{{ tier.price }}<span class="suffix">{{ site.data.pricing.currency_suffix }}</span>
+        </div>
+
+        <ul class="pricing-features">
+          {% for feature in tier.features %}
+          <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+
+        <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ 'Hola! Me interesa el plan ' | append: tier.name | append: '. ¿Pueden darme más información?' | url_encode }}"
+           class="btn {% if tier.highlighted %}btn-primary{% else %}btn-secondary{% endif %}"
+           style="width: 100%;"
+           target="_blank"
+           rel="noopener">
+          Elegir Plan
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center" style="margin-top: var(--space-8);">
+      {% for note in site.data.pricing.notes %}
+      <p class="text-secondary" style="margin-bottom: var(--space-2);">{{ note }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

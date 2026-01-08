@@ -1,0 +1,68 @@
+# Disciplines offered at Hayeshi
+# Edit this file to update discipline information
+
+- id: judo
+  name: "Judo"
+  tagline: "El arte gentil"
+  icon: "judo"
+  color: "#E53935"
+  short_description: "Domina el equilibrio y aprende a usar la fuerza de tu oponente."
+  full_description: "El Judo es un arte marcial japonés que se centra en técnicas de derribo y control en el suelo. Desarrolla fuerza, flexibilidad y disciplina mental mientras aprendes el camino de la máxima eficacia con mínimo esfuerzo."
+  benefits:
+    - "Mejora el equilibrio y la coordinación"
+    - "Desarrolla fuerza funcional"
+    - "Aumenta la confianza y disciplina"
+    - "Excelente para defensa personal"
+  ages:
+    - kids
+    - teens
+    - adults
+
+- id: capoeira
+  name: "Capoeira"
+  tagline: "Arte en movimiento"
+  icon: "capoeira"
+  color: "#FFA726"
+  short_description: "Fusión de danza, acrobacia y artes marciales brasileñas."
+  full_description: "La Capoeira es un arte marcial afro-brasileño que combina elementos de lucha, danza, acrobacia y música. Es una forma expresiva de movimiento que mejora la flexibilidad, la resistencia y la creatividad."
+  benefits:
+    - "Mejora la flexibilidad y agilidad"
+    - "Desarrolla ritmo y musicalidad"
+    - "Fortalece todo el cuerpo"
+    - "Fomenta la creatividad y expresión"
+  ages:
+    - kids
+    - teens
+    - adults
+
+- id: krav-maga
+  name: "Krav Maga"
+  tagline: "Defensa real"
+  icon: "krav-maga"
+  color: "#78909C"
+  short_description: "Sistema de defensa personal israelí, directo y efectivo."
+  full_description: "Krav Maga es un sistema de combate desarrollado para las fuerzas de defensa israelíes. Se enfoca en situaciones del mundo real con técnicas prácticas y directas. Aprende a protegerte y a tus seres queridos."
+  benefits:
+    - "Técnicas de defensa personal prácticas"
+    - "Preparación para situaciones reales"
+    - "Mejora la condición física"
+    - "Aumenta la confianza y seguridad"
+  ages:
+    - teens
+    - adults
+
+- id: boxeo
+  name: "Boxeo"
+  tagline: "El arte noble"
+  icon: "boxeo"
+  color: "#D32F2F"
+  short_description: "El deporte de combate más completo para cuerpo y mente."
+  full_description: "El boxeo es uno de los deportes de combate más antiguos y efectivos. Desarrolla velocidad, potencia, resistencia cardiovascular y agudeza mental. Perfecto para quienes buscan un entrenamiento intenso."
+  benefits:
+    - "Excelente cardio y quema de calorías"
+    - "Desarrolla velocidad y reflejos"
+    - "Fortalece brazos, core y piernas"
+    - "Mejora la concentración y disciplina"
+  ages:
+    - teens
+    - adults

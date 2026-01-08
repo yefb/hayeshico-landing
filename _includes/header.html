@@ -1,0 +1,49 @@
+<header class="site-header" id="header">
+  <div class="container">
+    <div class="header-content">
+      <a href="{{ '/' | relative_url }}" class="header-logo-link">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="header-logo">
+      </a>
+
+      <nav class="header-nav">
+        <a href="#disciplinas">Disciplinas</a>
+        <a href="#instructores">Instructores</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ site.cta_whatsapp_message | url_encode }}"
+         class="btn btn-primary header-cta"
+         target="_blank"
+         rel="noopener">
+        {{ site.cta_primary }}
+      </a>
+
+      <button class="mobile-menu-toggle" aria-label="Abrir menú" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="menu-overlay"></div>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu-close" aria-label="Cerrar menú" id="menu-close">×</button>
+  <nav>
+    <a href="#disciplinas">Disciplinas</a>
+    <a href="#instructores">Instructores</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#precios">Precios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ site.cta_whatsapp_message | url_encode }}"
+     class="btn btn-whatsapp btn-large mobile-menu-cta"
+     target="_blank"
+     rel="noopener">
+    {{ site.cta_primary }}
+  </a>
+</div>

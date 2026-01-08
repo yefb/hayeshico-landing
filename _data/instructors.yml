@@ -1,0 +1,30 @@
+# Hayeshi Instructors
+# Edit this file to update instructor information
+
+- id: instructor-judo
+  name: "Nombre del Profesor"  # FILL IN
+  discipline: "Judo"
+  photo: "/assets/images/instructors/judo.jpg"  # FILL IN: Add photo
+  credentials: "Cinturón Negro 3er Dan"  # FILL IN
+  bio: "Breve biografía del instructor de Judo. Experiencia, filosofía de enseñanza, y lo que lo apasiona de las artes marciales."  # FILL IN
+
+- id: instructor-capoeira
+  name: "Nombre del Profesor"  # FILL IN
+  discipline: "Capoeira"
+  photo: "/assets/images/instructors/capoeira.jpg"  # FILL IN: Add photo
+  credentials: "Mestre / Contramestre"  # FILL IN
+  bio: "Breve biografía del instructor de Capoeira. Experiencia, filosofía de enseñanza, y lo que lo apasiona de las artes marciales."  # FILL IN
+
+- id: instructor-krav-maga
+  name: "Nombre del Profesor"  # FILL IN
+  discipline: "Krav Maga"
+  photo: "/assets/images/instructors/krav-maga.jpg"  # FILL IN: Add photo
+  credentials: "Instructor Certificado"  # FILL IN
+  bio: "Breve biografía del instructor de Krav Maga. Experiencia, filosofía de enseñanza, y lo que lo apasiona de las artes marciales."  # FILL IN
+
+- id: instructor-boxeo
+  name: "Nombre del Profesor"  # FILL IN
+  discipline: "Boxeo"
+  photo: "/assets/images/instructors/boxeo.jpg"  # FILL IN: Add photo
+  credentials: "Entrenador Profesional"  # FILL IN
+  bio: "Breve biografía del instructor de Boxeo. Experiencia, filosofía de enseñanza, y lo que lo apasiona de las artes marciales."  # FILL IN

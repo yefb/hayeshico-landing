@@ -1,0 +1,55 @@
+<section class="section" id="disciplinas">
+  <div class="container">
+    <div class="section-header">
+      <h2>Nuestras Disciplinas</h2>
+      <p>Cuatro artes marciales únicas, cada una con su filosofía y beneficios. Haz clic para conocer más.</p>
+    </div>
+
+    <div class="grid grid-2">
+      {% for discipline in site.data.disciplines %}
+      <div class="card discipline-card" data-discipline="{{ discipline.id }}" data-ages="{{ discipline.ages | join: ',' }}">
+        <div class="discipline-header">
+          <div class="discipline-icon" style="background-color: {{ discipline.color }}20; color: {{ discipline.color }};">
+            {% case discipline.id %}
+              {% when 'judo' %}🥋
+              {% when 'capoeira' %}🎵
+              {% when 'krav-maga' %}🛡️
+              {% when 'boxeo' %}🥊
+            {% endcase %}
+          </div>
+          <div class="discipline-info">
+            <h3 class="discipline-name">{{ discipline.name }}</h3>
+            <p class="discipline-tagline">{{ discipline.tagline }}</p>
+          </div>
+          <div class="discipline-expand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <div class="discipline-content">
+          <div class="discipline-description">
+            <p>{{ discipline.full_description }}</p>
+            <ul class="discipline-benefits">
+              {% for benefit in discipline.benefits %}
+              <li>{{ benefit }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center" style="margin-top: var(--space-12);">
+      <p class="text-secondary" style="margin-bottom: var(--space-6);">¿No sabes cuál elegir? ¡Te ayudamos!</p>
+      <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ 'Hola! No estoy seguro de qué disciplina es mejor para mí. ¿Me pueden orientar?' | url_encode }}"
+         class="btn btn-whatsapp"
+         target="_blank"
+         rel="noopener">
+        Pregúntanos
+      </a>
+    </div>
+  </div>
+</section>

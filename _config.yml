@@ -1,0 +1,44 @@
+# Site settings
+title: "Hayeshi"
+tagline: "Academia de Artes Marciales"
+description: "Transforma tu cuerpo y mente con Judo, Capoeira, Krav Maga y Boxeo. Clases para todas las edades en un ambiente familiar y profesional."
+url: "https://hayeshi.co"
+baseurl: ""
+
+# Contact
+whatsapp: "+57XXXXXXXXXX"  # FILL IN: Your WhatsApp number
+instagram: "hayeshi.co"
+email: "info@hayeshi.co"
+
+# CTA Messages (Spanish, first-person)
+cta_primary: "Reserva Mi Clase Gratis"
+cta_whatsapp_message: "Hola! Me interesa una clase de prueba gratis en Hayeshi. Cuándo puedo empezar?"
+
+# Free trial info
+trial_duration_kids: "1 hora"
+trial_duration_teens_adults: "2 horas"
+
+# Location (FILL IN)
+address: "Tu dirección aquí"
+city: "Ciudad, Colombia"
+google_maps_embed: ""  # FILL IN: Google Maps embed URL
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - "*.md"
+  - "!index.md"

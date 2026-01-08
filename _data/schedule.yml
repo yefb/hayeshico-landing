@@ -1,0 +1,91 @@
+# Weekly class schedule
+# Edit this file to update the schedule
+
+# Days of the week
+days:
+  - id: lunes
+    name: "Lunes"
+  - id: martes
+    name: "Martes"
+  - id: miercoles
+    name: "Miércoles"
+  - id: jueves
+    name: "Jueves"
+  - id: viernes
+    name: "Viernes"
+  - id: sabado
+    name: "Sábado"
+
+# Classes by day
+# Format: discipline, time, age_group (kids/teens/adults)
+classes:
+  lunes:
+    - discipline: "Judo"
+      time: "16:00 - 17:00"
+      age_group: "kids"
+    - discipline: "Judo"
+      time: "17:00 - 19:00"
+      age_group: "teens_adults"
+    - discipline: "Boxeo"
+      time: "19:00 - 21:00"
+      age_group: "teens_adults"
+
+  martes:
+    - discipline: "Capoeira"
+      time: "16:00 - 17:00"
+      age_group: "kids"
+    - discipline: "Capoeira"
+      time: "17:00 - 19:00"
+      age_group: "teens_adults"
+    - discipline: "Krav Maga"
+      time: "19:00 - 21:00"
+      age_group: "adults"
+
+  miercoles:
+    - discipline: "Judo"
+      time: "16:00 - 17:00"
+      age_group: "kids"
+    - discipline: "Judo"
+      time: "17:00 - 19:00"
+      age_group: "teens_adults"
+    - discipline: "Boxeo"
+      time: "19:00 - 21:00"
+      age_group: "teens_adults"
+
+  jueves:
+    - discipline: "Capoeira"
+      time: "16:00 - 17:00"
+      age_group: "kids"
+    - discipline: "Capoeira"
+      time: "17:00 - 19:00"
+      age_group: "teens_adults"
+    - discipline: "Krav Maga"
+      time: "19:00 - 21:00"
+      age_group: "adults"
+
+  viernes:
+    - discipline: "Judo"
+      time: "16:00 - 17:00"
+      age_group: "kids"
+    - discipline: "Boxeo"
+      time: "17:00 - 19:00"
+      age_group: "teens_adults"
+
+  sabado:
+    - discipline: "Capoeira"
+      time: "09:00 - 10:00"
+      age_group: "kids"
+    - discipline: "Judo"
+      time: "10:00 - 12:00"
+      age_group: "all"
+    - discipline: "Sparring Mixto"
+      time: "12:00 - 14:00"
+      age_group: "teens_adults"
+
+# Age group labels
+age_labels:
+  kids: "Niños (6-12)"
+  teens: "Adolescentes (13-17)"
+  adults: "Adultos (18+)"
+  teens_adults: "Adolescentes y Adultos"
+  all: "Todas las edades"

@@ -1,0 +1,36 @@
+<section class="section" id="testimonios">
+  <div class="container">
+    <div class="section-header">
+      <h2>Lo Que Dicen Nuestros Estudiantes</h2>
+      <p>Experiencias reales de nuestra comunidad Hayeshi.</p>
+    </div>
+
+    <div class="grid grid-3">
+      {% for testimonial in site.data.testimonials %}
+      <div class="card testimonial-card">
+        <p class="testimonial-quote">{{ testimonial.quote }}</p>
+        <div class="testimonial-author">
+          {% if testimonial.photo %}
+          <div class="author-photo">
+            <img src="{{ testimonial.photo | relative_url }}" alt="{{ testimonial.author }}" loading="lazy">
+          </div>
+          {% endif %}
+          <div class="author-info">
+            <p class="author-name">{{ testimonial.author }}</p>
+            <p class="author-context">{{ testimonial.context }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center" style="margin-top: var(--space-12);">
+      <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ site.cta_whatsapp_message | url_encode }}"
+         class="btn btn-primary btn-large"
+         target="_blank"
+         rel="noopener">
+        {{ site.cta_primary }}
+      </a>
+    </div>
+  </div>
+</section>

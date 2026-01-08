@@ -1,0 +1,47 @@
+# Pricing tiers
+# Edit this file to update pricing information
+
+# Currency symbol
+currency: "$"
+currency_suffix: "/mes"
+
+# Pricing tiers
+tiers:
+  - id: starter
+    name: "Básico"
+    description: "Perfecto para empezar"
+    price: "XXX.XXX"  # FILL IN: e.g., "150.000"
+    features:
+      - "1 disciplina"
+      - "2 clases por semana"
+      - "Acceso a la comunidad"
+    highlighted: false
+
+  - id: popular
+    name: "Popular"
+    description: "Nuestra opción más elegida"
+    price: "XXX.XXX"  # FILL IN: e.g., "220.000"
+    features:
+      - "2 disciplinas"
+      - "Clases ilimitadas"
+      - "Acceso a la comunidad"
+      - "Eventos especiales"
+    highlighted: true
+
+  - id: premium
+    name: "Premium"
+    description: "Para el practicante dedicado"
+    price: "XXX.XXX"  # FILL IN: e.g., "300.000"
+    features:
+      - "Todas las disciplinas"
+      - "Clases ilimitadas"
+      - "Acceso a la comunidad"
+      - "Eventos especiales"
+      - "Sesiones privadas mensuales"
+    highlighted: false
+
+# Additional notes displayed below pricing
+notes:
+  - "Clase de prueba gratis para nuevos estudiantes"
+  - "Descuentos familiares disponibles"
+  - "Sin contratos de permanencia"

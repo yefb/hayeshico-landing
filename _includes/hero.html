@@ -1,0 +1,37 @@
+<section class="hero" id="inicio">
+  <!-- Video Background - Replace with your video -->
+  <video class="hero-video" autoplay muted loop playsinline poster="{{ '/assets/images/hero-poster.jpg' | relative_url }}">
+    <source src="{{ '/assets/videos/hero.mp4' | relative_url }}" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="{{ site.title }}" class="hero-logo">
+
+    <h1 class="hero-title">Transforma Tu Vida a Través de las Artes Marciales</h1>
+
+    <p class="hero-subtitle">
+      Judo, Capoeira, Krav Maga y Boxeo para todas las edades.
+      Descubre tu potencial en un ambiente familiar y profesional.
+    </p>
+
+    <div class="hero-cta">
+      <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ site.cta_whatsapp_message | url_encode }}"
+         class="btn btn-primary btn-large"
+         target="_blank"
+         rel="noopener">
+        {{ site.cta_primary }}
+      </a>
+      <a href="#disciplinas" class="btn btn-secondary btn-large">
+        Conocer Más
+      </a>
+    </div>
+  </div>
+
+  <a href="#edades" class="hero-scroll" aria-label="Desplazar hacia abajo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </a>
+</section>

@@ -1,0 +1,50 @@
+<section class="section" id="horarios">
+  <div class="container">
+    <div class="section-header">
+      <h2>Horarios de Clases</h2>
+      <p>Encuentra el horario que mejor se adapte a tu rutina.</p>
+    </div>
+
+    <div class="schedule-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Disciplina</th>
+            <th>Horario</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for day in site.data.schedule.days %}
+            {% assign day_classes = site.data.schedule.classes[day.id] %}
+            {% if day_classes %}
+              {% for class in day_classes %}
+              <tr>
+                {% if forloop.first %}
+                <td rowspan="{{ day_classes.size }}"><strong>{{ day.name }}</strong></td>
+                {% endif %}
+                <td>{{ class.discipline }}</td>
+                <td>{{ class.time }}</td>
+                <td>{{ site.data.schedule.age_labels[class.age_group] }}</td>
+              </tr>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text-center" style="margin-top: var(--space-8);">
+      <p class="text-secondary" style="margin-bottom: var(--space-4);">
+        Los horarios pueden variar. Confirma disponibilidad antes de tu primera clase.
+      </p>
+      <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ 'Hola! Quiero confirmar los horarios de clases. ¿Están actualizados?' | url_encode }}"
+         class="btn btn-secondary"
+         target="_blank"
+         rel="noopener">
+        Confirmar Horarios
+      </a>
+    </div>
+  </div>
+</section>
