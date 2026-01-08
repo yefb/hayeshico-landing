@@ -2,19 +2,21 @@
   <div class="container">
     <div class="section-header">
       <h2>Nuestras Disciplinas</h2>
-      <p>Cuatro artes marciales únicas, cada una con su filosofía y beneficios. Haz clic para conocer más.</p>
+      <p>Seis artes marciales únicas, cada una con su filosofía y beneficios. Haz clic para conocer más.</p>
     </div>
 
-    <div class="grid grid-2">
+    <div class="grid grid-3">
       {% for discipline in site.data.disciplines %}
       <div class="card discipline-card" data-discipline="{{ discipline.id }}" data-ages="{{ discipline.ages | join: ',' }}">
         <div class="discipline-header">
           <div class="discipline-icon" style="background-color: {{ discipline.color }}20; color: {{ discipline.color }};">
             {% case discipline.id %}
+              {% when 'taekwondo' %}🦵
               {% when 'judo' %}🥋
-              {% when 'capoeira' %}🎵
-              {% when 'krav-maga' %}🛡️
+              {% when 'jiujitsu' %}🤼
               {% when 'boxeo' %}🥊
+              {% when 'krav-maga' %}🛡️
+              {% when 'capoeira' %}🎵
             {% endcase %}
           </div>
           <div class="discipline-info">

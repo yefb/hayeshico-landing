@@ -2,40 +2,109 @@
   <div class="container">
     <div class="section-header">
       <h2>Planes y Precios</h2>
-      <p>Membresías flexibles sin contratos de permanencia. Tu primera clase es gratis.</p>
+      <p>Usa tus horas en cualquier disciplina. Sin contratos de permanencia.</p>
     </div>
 
-    <div class="grid grid-3">
-      {% for tier in site.data.pricing.tiers %}
-      <div class="card pricing-card {% if tier.highlighted %}highlighted{% endif %}">
-        <h3 class="pricing-name">{{ tier.name }}</h3>
-        <p class="pricing-description">{{ tier.description }}</p>
-
-        <div class="pricing-price">
-          <span class="currency">{{ site.data.pricing.currency }}</span>{{ tier.price }}<span class="suffix">{{ site.data.pricing.currency_suffix }}</span>
-        </div>
-
-        <ul class="pricing-features">
-          {% for feature in tier.features %}
-          <li>{{ feature }}</li>
+    <!-- Membresías Adultos y Niños -->
+    <div class="pricing-tables">
+      <!-- Adultos -->
+      <div class="pricing-table-wrapper">
+        <h3 class="pricing-table-title">{{ site.data.pricing.adults.title }}</h3>
+        <p class="pricing-table-subtitle">{{ site.data.pricing.adults.subtitle }}</p>
+        <div class="pricing-table">
+          {% for plan in site.data.pricing.adults.plans %}
+          <div class="pricing-row {% if plan.highlighted %}highlighted{% endif %}">
+            <span class="pricing-hours">{{ plan.hours }}</span>
+            <span class="pricing-amount">{{ site.data.pricing.currency }}{{ plan.price }}{{ site.data.pricing.currency_suffix }}</span>
+          </div>
           {% endfor %}
-        </ul>
-
-        <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ 'Hola! Me interesa el plan ' | append: tier.name | append: '. ¿Pueden darme más información?' | url_encode }}"
-           class="btn {% if tier.highlighted %}btn-primary{% else %}btn-secondary{% endif %}"
-           style="width: 100%;"
-           target="_blank"
-           rel="noopener">
-          Elegir Plan
-        </a>
+        </div>
       </div>
-      {% endfor %}
+
+      <!-- Niños -->
+      <div class="pricing-table-wrapper">
+        <h3 class="pricing-table-title">{{ site.data.pricing.kids.title }}</h3>
+        <p class="pricing-table-subtitle">{{ site.data.pricing.kids.subtitle }}</p>
+        <div class="pricing-table">
+          {% for plan in site.data.pricing.kids.plans %}
+          <div class="pricing-row {% if plan.highlighted %}highlighted{% endif %}">
+            <span class="pricing-hours">{{ plan.hours }}</span>
+            <span class="pricing-amount">{{ site.data.pricing.currency }}{{ plan.price }}{{ site.data.pricing.currency_suffix }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
 
-    <div class="text-center" style="margin-top: var(--space-8);">
-      {% for note in site.data.pricing.notes %}
-      <p class="text-secondary" style="margin-bottom: var(--space-2);">{{ note }}</p>
-      {% endfor %}
+    <!-- Clase Suelta -->
+    <div class="single-class-card">
+      <div class="single-class-info">
+        <h4>{{ site.data.pricing.single_class.title }}</h4>
+        <p>{{ site.data.pricing.single_class.subtitle }}</p>
+      </div>
+      <div class="single-class-price">
+        {{ site.data.pricing.currency }}{{ site.data.pricing.single_class.price }}{{ site.data.pricing.single_class.unit }}
+      </div>
+    </div>
+
+    <!-- Clases Personalizadas -->
+    <div class="personalized-section">
+      <h3 class="pricing-table-title">{{ site.data.pricing.personalized.title }}</h3>
+      <p class="pricing-table-subtitle">{{ site.data.pricing.personalized.subtitle }}</p>
+
+      <div class="personalized-grid">
+        {% for pkg in site.data.pricing.personalized.packages %}
+        <div class="personalized-card {% if pkg.highlighted %}highlighted{% endif %}">
+          <div class="pkg-classes">{{ pkg.classes }}</div>
+          <div class="pkg-price">{{ site.data.pricing.currency }}{{ pkg.price }}</div>
+          {% if pkg.savings %}
+          <div class="pkg-savings">Ahorras {{ site.data.pricing.currency }}{{ pkg.savings }}</div>
+          {% endif %}
+          {% if pkg.validity %}
+          <div class="pkg-validity">Vigencia: {{ pkg.validity }}</div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+
+      <ul class="personalized-benefits">
+        {% for benefit in site.data.pricing.personalized_benefits %}
+        <li>{{ benefit }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Descuentos Familiares -->
+    <div class="family-discounts">
+      <h4>Descuentos Familiares</h4>
+      <div class="discount-badges">
+        {% for discount in site.data.pricing.family_discounts %}
+        <div class="discount-badge">
+          <span class="discount-percent">{{ discount.discount }}</span>
+          <span class="discount-member">{{ discount.member }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Beneficios -->
+    <div class="membership-benefits">
+      <h4>Beneficios de tu Membresía</h4>
+      <ul>
+        {% for benefit in site.data.pricing.benefits %}
+        <li>{{ benefit }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center" style="margin-top: var(--space-12);">
+      <a href="https://wa.me/{{ site.whatsapp | remove: '+' }}?text={{ 'Hola! Quiero información sobre las membresías de Hayeshi.' | url_encode }}"
+         class="btn btn-primary btn-large"
+         target="_blank"
+         rel="noopener">
+        Consultar Disponibilidad
+      </a>
     </div>
   </div>
 </section>

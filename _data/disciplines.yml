@@ -1,9 +1,26 @@
-# Disciplines offered at Hayeshi
+# Disciplinas disponibles en Hayeshi
 # Edit this file to update discipline information
+
+- id: taekwondo
+  name: "Taekwondo"
+  tagline: "El arte del pie y el puño"
+  icon: "taekwondo"
+  color: "#1976D2"
+  short_description: "Arte marcial coreano enfocado en patadas dinámicas y disciplina mental."
+  full_description: "El Taekwondo es un arte marcial coreano conocido por sus espectaculares técnicas de patadas y su énfasis en la disciplina mental. Desarrolla flexibilidad, velocidad, coordinación y fortaleza interior."
+  benefits:
+    - "Mejora la flexibilidad y agilidad"
+    - "Desarrolla velocidad y coordinación"
+    - "Fortalece la disciplina mental"
+    - "Excelente para defensa personal"
+  ages:
+    - kids
+    - teens
+    - adults
 
 - id: judo
   name: "Judo"
-  tagline: "El arte gentil"
+  tagline: "El camino de la suavidad"
   icon: "judo"
   color: "#E53935"
   short_description: "Domina el equilibrio y aprende a usar la fuerza de tu oponente."
@@ -18,35 +35,18 @@
     - teens
     - adults
 
-- id: capoeira
-  name: "Capoeira"
-  tagline: "Arte en movimiento"
-  icon: "capoeira"
-  color: "#FFA726"
-  short_description: "Fusión de danza, acrobacia y artes marciales brasileñas."
-  full_description: "La Capoeira es un arte marcial afro-brasileño que combina elementos de lucha, danza, acrobacia y música. Es una forma expresiva de movimiento que mejora la flexibilidad, la resistencia y la creatividad."
+- id: jiujitsu
+  name: "Jiujitsu"
+  tagline: "El arte suave"
+  icon: "jiujitsu"
+  color: "#7B1FA2"
+  short_description: "Técnicas de sumisión y control en el suelo para cualquier tamaño."
+  full_description: "El Jiujitsu brasileño se especializa en combate en el suelo, usando llaves y estrangulamientos para someter al oponente. Ideal para personas de cualquier contextura física, ya que la técnica supera a la fuerza bruta."
   benefits:
-    - "Mejora la flexibilidad y agilidad"
-    - "Desarrolla ritmo y musicalidad"
-    - "Fortalece todo el cuerpo"
-    - "Fomenta la creatividad y expresión"
-  ages:
-    - kids
-    - teens
-    - adults
-
-- id: krav-maga
-  name: "Krav Maga"
-  tagline: "Defensa real"
-  icon: "krav-maga"
-  color: "#78909C"
-  short_description: "Sistema de defensa personal israelí, directo y efectivo."
-  full_description: "Krav Maga es un sistema de combate desarrollado para las fuerzas de defensa israelíes. Se enfoca en situaciones del mundo real con técnicas prácticas y directas. Aprende a protegerte y a tus seres queridos."
-  benefits:
-    - "Técnicas de defensa personal prácticas"
-    - "Preparación para situaciones reales"
-    - "Mejora la condición física"
-    - "Aumenta la confianza y seguridad"
+    - "Técnica sobre fuerza bruta"
+    - "Excelente cardio y resistencia"
+    - "Desarrolla pensamiento estratégico"
+    - "Defensa personal efectiva en el suelo"
   ages:
     - teens
     - adults
@@ -64,5 +64,38 @@
     - "Fortalece brazos, core y piernas"
     - "Mejora la concentración y disciplina"
   ages:
+    - teens
+    - adults
+
+- id: krav-maga
+  name: "Krav Maga"
+  tagline: "Defensa real"
+  icon: "krav-maga"
+  color: "#455A64"
+  short_description: "Sistema de defensa personal israelí, directo y efectivo."
+  full_description: "Krav Maga es un sistema de combate desarrollado para las fuerzas de defensa israelíes. Se enfoca en situaciones del mundo real con técnicas prácticas y directas. Aprende a protegerte y a tus seres queridos."
+  benefits:
+    - "Técnicas de defensa personal prácticas"
+    - "Preparación para situaciones reales"
+    - "Mejora la condición física"
+    - "Aumenta la confianza y seguridad"
+  ages:
+    - teens
+    - adults
+
+- id: capoeira
+  name: "Capoeira"
+  tagline: "Arte en movimiento"
+  icon: "capoeira"
+  color: "#FFA726"
+  short_description: "Fusión de danza, acrobacia y artes marciales brasileñas."
+  full_description: "La Capoeira es un arte marcial afro-brasileño que combina elementos de lucha, danza, acrobacia y música. Es una forma expresiva de movimiento que mejora la flexibilidad, la resistencia y la creatividad."
+  benefits:
+    - "Mejora la flexibilidad y agilidad"
+    - "Desarrolla ritmo y musicalidad"
+    - "Fortalece todo el cuerpo"
+    - "Fomenta la creatividad y expresión"
+  ages:
+    - kids
     - teens
     - adults

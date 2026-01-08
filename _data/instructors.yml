@@ -1,30 +1,44 @@
 # Hayeshi Instructors
 # Edit this file to update instructor information
 
+- id: instructor-taekwondo
+  name: "Nombre del Profesor"  # FILL IN
+  discipline: "Taekwondo"
+  photo: "/assets/images/instructors/taekwondo.jpg"  # FILL IN: Add photo
+  credentials: "Cinturón Negro"  # FILL IN
+  bio: "Breve biografía del instructor de Taekwondo."  # FILL IN
+
 - id: instructor-judo
   name: "Nombre del Profesor"  # FILL IN
   discipline: "Judo"
   photo: "/assets/images/instructors/judo.jpg"  # FILL IN: Add photo
-  credentials: "Cinturón Negro 3er Dan"  # FILL IN
-  bio: "Breve biografía del instructor de Judo. Experiencia, filosofía de enseñanza, y lo que lo apasiona de las artes marciales."  # FILL IN
+  credentials: "Cinturón Negro"  # FILL IN
+  bio: "Breve biografía del instructor de Judo."  # FILL IN
 
-- id: instructor-capoeira
+- id: instructor-jiujitsu
   name: "Nombre del Profesor"  # FILL IN
-  discipline: "Capoeira"
-  photo: "/assets/images/instructors/capoeira.jpg"  # FILL IN: Add photo
-  credentials: "Mestre / Contramestre"  # FILL IN
-  bio: "Breve biografía del instructor de Capoeira. Experiencia, filosofía de enseñanza, y lo que lo apasiona de las artes marciales."  # FILL IN
-
-- id: instructor-krav-maga
-  name: "Nombre del Profesor"  # FILL IN
-  discipline: "Krav Maga"
-  photo: "/assets/images/instructors/krav-maga.jpg"  # FILL IN: Add photo
-  credentials: "Instructor Certificado"  # FILL IN
-  bio: "Breve biografía del instructor de Krav Maga. Experiencia, filosofía de enseñanza, y lo que lo apasiona de las artes marciales."  # FILL IN
+  discipline: "Jiujitsu"
+  photo: "/assets/images/instructors/jiujitsu.jpg"  # FILL IN: Add photo
+  credentials: "Cinturón Negro"  # FILL IN
+  bio: "Breve biografía del instructor de Jiujitsu."  # FILL IN
 
 - id: instructor-boxeo
   name: "Nombre del Profesor"  # FILL IN
   discipline: "Boxeo"
   photo: "/assets/images/instructors/boxeo.jpg"  # FILL IN: Add photo
   credentials: "Entrenador Profesional"  # FILL IN
-  bio: "Breve biografía del instructor de Boxeo. Experiencia, filosofía de enseñanza, y lo que lo apasiona de las artes marciales."  # FILL IN
+  bio: "Breve biografía del instructor de Boxeo."  # FILL IN
+
+- id: instructor-krav-maga
+  name: "Nombre del Profesor"  # FILL IN
+  discipline: "Krav Maga"
+  photo: "/assets/images/instructors/krav-maga.jpg"  # FILL IN: Add photo
+  credentials: "Instructor Certificado"  # FILL IN
+  bio: "Breve biografía del instructor de Krav Maga."  # FILL IN
+
+- id: instructor-capoeira
+  name: "Nombre del Profesor"  # FILL IN
+  discipline: "Capoeira"
+  photo: "/assets/images/instructors/capoeira.jpg"  # FILL IN: Add photo
+  credentials: "Mestre / Contramestre"  # FILL IN
+  bio: "Breve biografía del instructor de Capoeira."  # FILL IN

@@ -1,47 +1,87 @@
-# Pricing tiers
-# Edit this file to update pricing information
+# Precios Hayeshi 2026
+# Membresías basadas en horas - usa tus horas en cualquier disciplina
 
-# Currency symbol
 currency: "$"
 currency_suffix: "/mes"
 
-# Pricing tiers
-tiers:
-  - id: starter
-    name: "Básico"
-    description: "Perfecto para empezar"
-    price: "XXX.XXX"  # FILL IN: e.g., "150.000"
-    features:
-      - "1 disciplina"
-      - "2 clases por semana"
-      - "Acceso a la comunidad"
-    highlighted: false
+# Membresías Adultos
+adults:
+  title: "Adultos"
+  subtitle: "Usa tus horas en cualquier disciplina"
+  plans:
+    - hours: "4 horas"
+      price: "160.000"
+    - hours: "8 horas"
+      price: "290.000"
+    - hours: "12 horas"
+      price: "400.000"
+      highlighted: true
+    - hours: "16 horas"
+      price: "490.000"
+    - hours: "20 horas"
+      price: "560.000"
+    - hours: "Ilimitado"
+      price: "650.000"
 
-  - id: popular
-    name: "Popular"
-    description: "Nuestra opción más elegida"
-    price: "XXX.XXX"  # FILL IN: e.g., "220.000"
-    features:
-      - "2 disciplinas"
-      - "Clases ilimitadas"
-      - "Acceso a la comunidad"
-      - "Eventos especiales"
-    highlighted: true
+# Membresías Niños
+kids:
+  title: "Niños"
+  subtitle: "Hasta 12 años"
+  plans:
+    - hours: "4 horas"
+      price: "140.000"
+    - hours: "8 horas"
+      price: "250.000"
+    - hours: "12 horas"
+      price: "350.000"
+      highlighted: true
 
-  - id: premium
-    name: "Premium"
-    description: "Para el practicante dedicado"
-    price: "XXX.XXX"  # FILL IN: e.g., "300.000"
-    features:
-      - "Todas las disciplinas"
-      - "Clases ilimitadas"
-      - "Acceso a la comunidad"
-      - "Eventos especiales"
-      - "Sesiones privadas mensuales"
-    highlighted: false
+# Clase suelta
+single_class:
+  title: "Clase Suelta"
+  subtitle: "Sin membresía"
+  price: "45.000"
+  unit: "/hora"
 
-# Additional notes displayed below pricing
-notes:
-  - "Clase de prueba gratis para nuevos estudiantes"
-  - "Descuentos familiares disponibles"
+# Clases personalizadas
+personalized:
+  title: "Clases Personalizadas"
+  subtitle: "Entrena 1 a 1 con tu instructor"
+  packages:
+    - classes: "1 clase"
+      price: "110.000"
+      savings: null
+      validity: null
+    - classes: "4 clases"
+      price: "400.000"
+      savings: "40.000"
+      validity: "2 meses"
+    - classes: "8 clases"
+      price: "750.000"
+      savings: "130.000"
+      validity: "4 meses"
+      highlighted: true
+    - classes: "12 clases"
+      price: "1.050.000"
+      savings: "270.000"
+      validity: "6 meses"
+
+# Descuentos familiares
+family_discounts:
+  - member: "2do familiar"
+    discount: "10%"
+  - member: "3er familiar en adelante"
+    discount: "15%"
+
+# Beneficios de membresía
+benefits:
+  - "Usa tus horas en cualquier disciplina"
+  - "Combínalas como quieras cada mes"
   - "Sin contratos de permanencia"
+  - "Congela tu membresía hasta 1 mes/año"
+
+# Beneficios clases personalizadas
+personalized_benefits:
+  - "Horario flexible"
+  - "Atención 100% personalizada"
+  - "Avanza a tu ritmo"
